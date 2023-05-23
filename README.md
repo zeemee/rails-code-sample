@@ -26,8 +26,11 @@ The search endpoint should be defined as follows:
 `GET /api/search?index=<number>&limit=<number>&query=<string>`
 
 Paramaters:
+
 **index**: A numerical index that represents the offset to start returning results from. Default 0.
+
 **limit**: A numerical limit on results to return. Default 10.
+
 **query**: A string to query for results. This should search the **name** of a cocktail recipe inclusively, as in, 'rita' should find 'Margarita'. An empty query string should result in an empty results array.
 
 The result format should look like this:
@@ -51,6 +54,7 @@ The details endpoint should be defined as follows:
 `GET /api/detail?id=<some type of id>`
 
 Parameters:
+
 **id**: This should be an identifier of a cocktail recipe record. I'd assume an int, but if you want to use a UUID string, that's fine too.
 
 The result format should look like this:
